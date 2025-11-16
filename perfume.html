@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Teddy Bear - GiftHouse</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f6;
+    }
+
+    header {
+      background: #ff4d6d;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Product Section --- */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .main-image {
+      width: 320px;
+      height: 320px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .thumbnail-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .thumbnail-gallery img {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    .thumbnail-gallery img:hover {
+      border-color: #ff4d6d;
+    }
+
+    .details {
+      max-width: 400px;
+    }
+
+    .details h2 {
+      color: #ff4d6d;
+    }
+
+    .details p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-size: 26px;
+      font-weight: bold;
+      color: #222;
+      margin: 15px 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e63950;
+    }
+
+    .buy-btn {
+      background: gold;
+      color: #222;
+    }
+
+    .buy-btn:hover {
+      background: #e6c200;
+    }
+
+    /* --- Product Description --- */
+    .extra-info {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .extra-info h3 {
+      color: #ff4d6d;
+    }
+
+    ul {
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* --- Reviews --- */
+    .reviews {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .review {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+
+    .review:last-child {
+      border-bottom: none;
+    }
+
+    .review strong {
+      color: #ff4d6d;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>🎁 GiftHouse</h2>
+    <nav>
+      <a href="index2.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div>
+      <img id="mainImg" src="perfume.jpg" alt="perfume" class="main-image">
+      <div class="thumbnail-gallery">
+        <img src="female perfume 1.jpg" alt="Teddy 1" onclick="changeImage(this)">
+        <img src="female perfume 2.jpg" alt="Teddy 2" onclick="changeImage(this)">
+        <img src="female perfume 3.jpg"alt="Teddy 3" onclick="changeImage(this)">
+        <img src="perfume.jpg" alt=" perfume" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <div class="details">
+      <h2>Female Perfume</h2>
+      <p>
+        Fresh, warm, and confident — this perfume blends jasmine, vanilla, and amber for a scent that feels both gentle and strong. Perfect for work, brunch, or a night out — it moves with you, just like your ambitions.
+      </p>
+      <ul>
+        <li>🧸 Size: 18 ML</li>
+        <li>💖 Material: Premium plush</li>
+        <li>🎁 Perfect for gifting occasions</li>
+        <li>🚚 Fast Delivery Available</li>
+      </ul>
+      <div class="price">₹349</div>
+      <div class="buttons">
+        <button class="btn">🛒 Add to Cart</button>
+        <a href="buy.html?name=Teddy%20&price=349">
+        <button class="btn buy-btn">💳 Buy Now</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="extra-info">
+    <h3>Product Description</h3>
+    <p>
+      Everyday Glow – For Her
+Light, smooth, and beautifully balanced — this perfume mixes fresh jasmine, soft vanilla, and a touch of amber warmth. It’s the kind of scent that makes every day feel special — whether you’re at work or out with friends.
+Fresh feel • All-day wear • Confident vibe.
+    </p>
+  </div>
+
+  <div class="reviews">
+    <h3>Customer Reviews</h3>
+    <div class="review">
+      <strong>⭐ Priya Sharma:</strong> "Super cute and soft! My sister loved it!"
+    </div>
+    <div class="review">
+      <strong>⭐ Raj Mehta:</strong> "Great quality for this price. Delivery was quick!"
+    </div>
+    <div class="review">
+      <strong>⭐ Sneha Kapoor:</strong> "The packaging was beautiful. Highly recommend!"
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 GiftHouse. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function changeImage(element) {
+      document.getElementById('mainImg').src = element.src;
+    }
+  </script>
+
+</body>
+</html>
