@@ -1,69 +1,215 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>GiftHouse - Home</title>
+  <title>GiftHouse - Shop</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background:#ff4d6d; padding:20px; text-align:center; color:white; }
-    nav a { margin: 0 15px; color:white; text-decoration:none; }
-    .banner { padding:50px; text-align:center; background:#ffe6ec; }
-    .banner h1 { font-size:2.5rem; }
-    footer { background:#333; color:white; text-align:center; padding:10px; margin-top:20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-     .products { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
-    .product { border:1px solid #ddd; border-radius:8px; margin:10px; padding:15px; width:200px; text-align:center; }
-    .product img { width:100%; height:150px; object-fit:cover; border-radius:8px; }
+    header {
+      background: #ff4d6d;
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Logo Style */
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+
+    /* Navigation bar */
+    nav {
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    
+  
+    
+    /* 🌟 Best Selling Products */
+    .best-selling {
+      text-align:center;
+      padding:40px 20px;
+      background:#f5f5f5;
+    }
+    .best-selling h2 {
+      color:#ff4d6d;
+      margin-bottom:20px;
+    }
+    .product-container {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+    .product {
+      border:1px solid #ddd;
+      border-radius:10px;
+      background:white;
+      padding:15px;
+      width:220px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width:100%;
+      height:150px;
+      border-radius:8px;
+      object-fit:cover;
+    }
+    .product h3 { margin:10px 0 5px; }
+    .product p { color:#555; }
+
+    /* 💥 Offer Section */
+    .offers {
+      background:#fff4e3;
+      text-align:center;
+      padding:40px 20px;
+    }
+    .offers h2 {
+      color:#ff4d6d;
+      margin-bottom:15px;
+    }
+    .offers p {
+      font-size:18px;
+      color:#444;
+    }
+    .offer-btn {
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 20px;
+      background:#ff4d6d;
+      color:white;
+      border:none;
+      border-radius:5px;
+      text-decoration:none;
+    }
+
+    /* 💬 Customer Reviews */
+    .reviews {
+      background:#f5f5f5;
+      text-align:center;
+      padding:40px 20px;
+    }
+    .reviews h2 {
+      color:#ff4d6d;
+      margin-bottom:25px;
+    }
+    .review-container {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+    .review {
+      background:white;
+      border-radius:10px;
+      padding:20px;
+      width:260px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      font-style:italic;
+    }
+    .review h4 {
+      margin-top:10px;
+      color:#333;
+      font-style:normal;
+    }
+
+    footer {
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h2> GiftHouse</h2>
+    
+    
+    <h1> GiftHouse</h1>
     <nav>
-      <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="Thanku.html">Details</a>
     </nav>
   </header>
 
-  <div class="banner">
-    <h1>Welcome to GiftHouse</h1>
-    <p>Find the perfect gifts for your loved ones </p>
-  </div>
-<h1 style="text-align:center; margin-top:20px;">Our Products</h1>
+    
 
- <div class="products">
-    <div class="product">
-      <img src="teddy bear.jpg" alt="teddy">
-      <h3>Teddy Bear</h3>
-      <p>₹ 299</p>
-    </div>
+  <!-- 🌟 Best Selling Products -->
+  <section class="best-selling">
+    <h2>⭐ Best Selling Gifts</h2>
+    <div class="product-container">
      <div class="product">
-      <img src="chocolate2.jpg" alt="chocolate box">
-           <h3>Chocolate Box</h3>
-      <p>₹199</p>
-    </div>
-  <div class="product">
-      <img src="perfume2.jpg" alt="perfume2"> 
-      <h3>Man Perfume</h3>
-      <p>₹99</p>
-    </div>
-    <div class="product">
-    <img src="personalised photo.jpg" alt="personalised photo">
-    <h3>personalised photo</h3>
-    <p>₹699</p>
+    <a href="teddy.html">
+      <img src="teddy bear.jpg" alt="Teddy Bear">
+    </a>
+    <h3>Teddy Bear</h3>
+    <p>₹299</p>
   </div>
-  <div class="product">
-    <img src="customise wooden Gifts.jpg" alt="customise wooden Gifts">
-    <h3>customise wooden</h3>
-    <p>₹499</p>
-  </div>
-  
+      <div class="product">
+        <img src="pands toys.jpg" alt="Bear">
+        <h3>Bear</h3>
+        <p>₹99</p>
+      </div>
+      <div class="product">
+        <img src="chocolate.jpg" alt="Chocolate">
+        <h3>Chocolate</h3>
+        <p>₹199</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💥 Offer Section -->
+  <section class="offers">
+    <h2>🎉 Special Festival Offer!</h2>
+    <p>Get <strong>20% OFF</strong> on all gifts above $2500!</p>
+    <a href="shop.html" class="offer-btn">Shop Now</a>
+  </section>
+
+  <!-- 💬 Customer Reviews -->
+  <section class="reviews">
+    <h2>What Our Customers Say 💬</h2>
+    <div class="review-container">
+      <div class="review">
+        <p>"Amazing products and packaging! My friend loved the surprise gift."</p>
+        <h4>- Aditi Sharma</h4>
+      </div>
+      <div class="review">
+        <p>"Fast delivery and beautiful designs. Totally worth it!"</p>
+        <h4>- Raj Mehta</h4>
+      </div>
+      <div class="review">
+
+        <p>"GiftHouse never disappoints. Always unique and affordable!"</p>
+        <h4>- Sneha Kapoor</h4>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2025 GiftHouse. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+
+
